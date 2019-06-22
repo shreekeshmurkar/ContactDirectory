@@ -1,0 +1,15 @@
+<h1>Contacts</h1>
+<table *ngIf="contacts">
+    <tr>
+        <td>First Name</td>
+        <td>Last Name</td>
+        <td>Number</td>
+        <td>Email Id</td>
+    </tr>
+    <tr *ngFor="let contact of contacts">
+            <td>{{contact.firstName}}</td>
+            <td>{{contact.lastName}}</td>
+            <td>{{contact.number}}</td>
+            <td>{{contact.email}}</td>
+    </tr>
+</table>
